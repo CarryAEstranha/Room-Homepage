@@ -26,7 +26,7 @@ Users should be able to:
 - Navigate the slider using either their mouse/trackpad or keyboard
 
 ### Screenshot
-<br/>
+
 ![screen](https://user-images.githubusercontent.com/53675070/136734872-1ec8f3b5-f561-4b1f-b205-c6be4a212ff4.png)
 
 ### Links
