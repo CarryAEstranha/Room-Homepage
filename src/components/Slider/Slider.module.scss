@@ -1,0 +1,176 @@
+/*******************/
+/*ESTILOS DO SLIDER*/
+/*******************/
+
+/*CONTAINER DO SLIDER*/
+#sliderContainer{
+    display: flex;
+
+    justify-content: right;
+
+    margin: auto;
+
+    max-width: 1440px;
+
+    /*IMAGE DO SLIDER*/
+    .sliderImage{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        flex-grow: 1;
+
+        height: 33.375rem;
+    }
+
+    /*CONTAINER DAS INFORMAÇÕES DO SLIDER*/
+    #sliderInformation{
+        background: var(--white);
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 6.25rem;
+
+        width: 37.5rem;
+        height: 33.375rem;
+
+        /*TITLE*/
+        h1{
+            font-family: 'Spartan', sans-serif;
+            font-size: 2.315rem;
+            font-weight: 600;
+        }
+
+        /*SPAN*/
+        span{
+            color: var(--dark-gray);
+
+            font-family: 'Spartan', sans-serif;
+            font-size: 0.715rem;
+            font-weight: 500;
+
+            line-height: 1.5;
+
+            margin: 1.5rem 0 1.5rem 0;
+        }
+
+        /*BUTÃO DO SHOP NOW*/
+        button{
+            background: none;
+
+            border: none;
+
+            width: fit-content;
+
+            /*EFEITO DE HOVER*/
+            &:hover{
+                /*TEXTO DO BOTÃO*/
+                span{
+                    color: var(--dark-gray);
+                }
+
+                /*ICONE DA SETINHA*/
+                img{
+                    filter: invert(64%) sepia(10%) saturate(0%) hue-rotate(210deg) brightness(98%) contrast(86%);
+                }
+            }
+
+            /*TEXTO DO BOTÃO*/
+            span{
+                color: var(--very-dark-gray);
+
+                font-family: 'Spartan', sans-serif;
+                font-size: 0.68rem;
+                font-weight: 600;
+
+                letter-spacing: 0.75rem;
+            }
+
+            /*ICONE DA SETINHA*/
+            img{
+                vertical-align: middle;
+
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    /*CONTAINER SETAS DO SLIDER*/
+    #sliderArrow{
+        background: none;
+
+        display: flex;
+
+        align-items: flex-end;
+
+        position: absolute;
+
+        pointer-events: none;
+
+        width: 37.5rem;
+        height: 33.375rem;
+
+        /*SETAS*/
+        .arrow{
+            background: var(--black);
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+            pointer-events: all;
+
+            width: 5rem;
+            height: 5rem;
+
+            /*EFEITOS DE HOVER*/
+            &:hover{
+                background: var(--very-dark-gray);
+            }
+
+            /*IMAGEM*/
+            img{
+                width: 0.875rem;
+                height: 1.5rem;
+            }
+        }
+    }
+}
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+
+/*MEDIA PARA A VERSÃO MOBILE*/
+@media only screen and (max-width: 1024px){
+    /*CONTAINER DO SLIDER*/
+    #sliderContainer{
+        flex-direction: column;
+
+        /*IMAGE DO SLIDER*/
+        .sliderImage{
+            height: 96vw;
+            max-height: 39.464rem;
+        }
+
+        /*CONTAINER DAS INFORMAÇÕES DO SLIDER*/
+        #sliderInformation{
+            padding: 3rem;
+
+            width: 100%;
+            height: 25.625rem;
+        }
+
+        /*CONTAINER SETAS DO SLIDER*/
+        #sliderArrow{
+            width: 100%;
+            height: 96vw;
+            max-height: 39.464rem;
+        }
+    }
+}

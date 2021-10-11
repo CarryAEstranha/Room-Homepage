@@ -1,0 +1,102 @@
+/******************/
+/*ESTILOS DO ABOUT*/
+/******************/
+
+/*CONTAINER DO ABOUT*/
+#aboutContainer{
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin: auto;
+
+    max-width: 1440px;
+
+    /*IMAGEM DA ESQUERDA*/
+    #leftImage{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        flex-grow: 1;
+        
+        height: 16.5625rem;
+    }
+
+    /*CONTAINER DAS INFORMAÇÕES*/
+    #aboutInformation{
+        background: var(--white);
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 0 3rem 0 3rem;
+
+        width: 40%;
+        height: 16.5625rem;
+
+        /*TÍTULO DA INFORMAÇÃO*/
+        h2{
+            font-family: 'Spartan', sans-serif;
+            font-size: 0.715rem;
+            font-weight: 700;
+
+            letter-spacing: 0.3125rem;
+
+            margin-bottom: 1.5rem;
+        }
+
+        /*TEXTO DE INFORMAÇÃO*/
+        span{
+            color: var(--dark-gray);
+
+            font-family: 'Spartan', sans-serif;
+            font-size: 0.715rem;
+            font-weight: 500;
+
+            line-height: 1.5;
+        }
+    }
+
+    /*IMAGEM DA DIREITA*/
+    #rightImage{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: 27.5rem;
+        height: 16.5625rem;
+    }
+}
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+
+/*MEDIA PARA A VERSÃO MOBILE*/
+@media only screen and (max-width: 1024px){
+    /*CONTAINER DO ABOUT*/
+    #aboutContainer{
+        flex-direction: column;
+
+        /*IMAGEM DA ESQUERDA*/
+        #leftImage{
+            height: 63.5vw;
+            max-height: 34.812rem;
+        }
+
+        /*CONTAINER DAS INFORMAÇÕES*/
+        #aboutInformation{
+            width: 100%;
+        }
+
+        /*IMAGEM DA DIREITA*/
+        #rightImage{
+            width: 100%;
+            height: 63.5vw;
+            max-height: 34.812rem;
+        }
+    }
+}

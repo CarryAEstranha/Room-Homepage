@@ -1,0 +1,100 @@
+/****************/
+/*ESTILOS GERAIS*/
+/****************/
+
+/*GLOBAL*/
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+/*BODY*/
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background: var(--very-dark-gray);
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/*BOTÕES*/
+button{
+    cursor: pointer;
+}
+
+/*ROOT*/
+:root{
+    /*******************/
+    /*VARIÁVEIS GLOBAIS*/
+    /*******************/
+
+    /*CORES PRIMÁRIAS*/
+    --black:            hsl(0, 0%, 0%);
+    --dark-gray:        hsl(0, 0%, 62%);
+    --very-dark-gray:   hsl(0, 0%, 26%);
+    --white:            hsl(0, 0%, 100%);
+}
+
+/*****************************/
+/*AJUSTE DE TAMANHO DE FONTES*/
+/*****************************/
+
+/*CONDICIONAIS DE QUERIES*/
+@media only screen and (min-width: 0px){   /*Menor que Mobile S*/
+    /*HTML*/
+    html{
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 320px){  /*Mobile S*/
+    html{
+        font-size: 11px;
+    }
+}
+@media only screen and (min-width: 375px){  /*Mobile M*/
+    html{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 425px){  /*Mobile L*/
+    html{
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 768px){  /*Tablet*/
+    html{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 1024px){ /*Laptop*/
+    html{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 1440px){ /*Laptop L*/
+    html{
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 2560px){    /*4K*/
+    html{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    body{
+        width: 320px;
+    }
+}
+
+/* NÃO PERMITE QUE A APLICAÇÃO RODE EM TELAS MENORES QUE 280px
+@media only screen and (max-width: 278px){
+    body{
+        display: none;
+    }
+} */
